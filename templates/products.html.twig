@@ -1,0 +1,33 @@
+{# templates/products.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Produits{% endblock %}
+
+{% block body %}
+    <h1>Liste des Produits</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Nom du Produit</th>
+            <th>Prix</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }} €</td>
+                <td>
+                    <a href="{{ path('product_detail', {'id': product.id}) }}">Détails</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ path('dashboard') }}" class="btn btn-primary">Retour</a>
+    </body>
+    </html>
+{% endblock %}

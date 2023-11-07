@@ -1,0 +1,39 @@
+/* public/css/styles.css */
+
+/* Modifier la couleur d'arrière-plan du corps */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Styliser les en-têtes de page */
+h1 {
+    color: #333;
+}
+
+/* Styliser les liens */
+a {
+    color: #007bff; /* Bleu Bootstrap par défaut */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styliser les boutons */
+.btn {
+    background-color: #007bff;
+
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,44 @@
+# Mon Projet Symfony
+
+Bienvenue dans le projet Symfony ! Ce projet est une application web construite avec Symfony, un framework PHP moderne.
+
+## Configuration Requise
+
+- PHP 7.4 ou version supérieure
+- Composer (Gestionnaire de dépendances PHP)
+- Serveur Web (par exemple, Apache, Nginx)
+
+## Installation
+
+1. Clonez ce dépôt :
+
+
+
+2. Installez les dépendances avec Composer :
+    composer install
+
+3. Configurez votre environnement en copiant le fichier `.env` :
+    cp .env.dist .env
+
+
+4. Lancez le serveur de développement :
+    php bin/console server:start
+
+
+5. Accédez à votre application dans votre navigateur à l'adresse `http://localhost:8000`
+
+## Fonctionnalités
+
+- Liste des Produits
+- Liste des Clients
+
+
+## Contribuer
+
+Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir des pull requests ou à signaler des problèmes.
+
+## Auteurs
+
+- Nicolas Rasteiro
+
+

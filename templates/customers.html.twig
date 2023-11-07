@@ -1,0 +1,18 @@
+{# templates/customers.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Clients{% endblock %}
+
+{% block body %}
+    <h1>Liste des Clients</h1>
+
+    <ol>
+        {% for customer in customers %}
+            <li>{{ customer.name }}</li>
+        {% endfor %}
+    </ol>
+    <a href="{{ path('dashboard') }}" class="btn btn-primary">Retour</a>
+    </body>
+    </html>
+{% endblock %}
